@@ -1,16 +1,21 @@
-# React + Vite
+# Anecdote Roulette
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive **React web application** designed to showcase software engineering quotes and track real-time voting analytics.
 
-Currently, two official plugins are available:
+## Features
+* **Anecdote Roulette:** Instantly display a randomized software engineering quote at the click of a button.
+* **Immutable Voting Engine:** Safely log votes for the active quote without violating React state constraints.
+* **Real-time Leaderboard:** Automatically isolates and highlights the single most popular anecdote on the fly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tracked Metrics
+* **Vote Count:** Individual cumulative scores maintained for each distinct anecdote entry.
+* **Popularity Index:** Dynamic calculation to determine which index commands the highest user engagement.
+* **Conditional Logic:** Safely triggers a fallback layout to prevent winner declarations until the very first vote is cast.
 
-## React Compiler
+## Tech Stack
+* **Frontend Library:** [React](https://react.dev)
+* **State Management:** Functional components utilizing React `useState` hooks.
+* **Build System:** Designed for compatibility with [Vite](https://vite.dev) or Create React App.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+*Developed as part of functional components and state handling practices.*
